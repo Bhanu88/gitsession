@@ -3,7 +3,7 @@ import pyinputplus as pyip
 
 def guess(x):
     number=random.randint(1,x)
-    print(number)
+    #print(number)
     guess = 0
     while guess != number:
         guess = pyip.inputInt('Enter num: ', max=x)
