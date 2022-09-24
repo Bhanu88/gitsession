@@ -1,0 +1,74 @@
+########################Pull request
+git clone https://github.com/Bhanu88/gitsession.git #clone repo
+
+cd gitsession
+
+git checkout -b F115 #create new branch 
+
+git remote add upstream https://github.com/Bhanu88/gitsession.git # adding upstream repo
+
+echo “some test file” > test5 # adding a file
+
+cat test5 # checking the file content
+
+git status # check git status
+
+git add test5 #adding the file to git index
+
+git commit -m "Adding a test file to new_branch" #commiting the file 
+
+git push -u origin F115 #pushing the file to remote repo
+
+##########################################git tag
+
+git tag v3
+or 
+git tag v3 <specific commit ID>
+git tag --list
+git push origin v3
+git checkout v3
+git tag -d v1
+
+cherry pick 
+#commit 1
+echo “CP” > CP1 # adding a file
+
+cat CP1 # checking the file content
+
+git status # check git status
+
+git add CP1 #adding the file to git index
+
+git commit -m "cherry pick1" #commiting the file 
+
+########################cherry pick 
+#commit 1
+echo “CP2” > CP22 # adding a file
+
+cat CP22 # checking the file content
+
+git status # check git status
+
+git add CP22 #adding the file to git index
+
+git commit -m "Cp22" #commiting the file 
+
+git log 
+
+#pick the commit id of cherry pick commit message 
+
+git checkout main
+
+git cherry-pick <Commit_ID>
+
+git push origin main
+
+####################git balme 
+git blame <file name> 
+ 
+ 
+
+
+
+
+

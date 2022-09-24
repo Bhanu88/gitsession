@@ -1,0 +1,34 @@
+Create a folder called learn_branching and cd into it => mkdir learn_branching && cd learn_branching.
+Initialize a git repository => git init.
+Create a file called first.txt => touch first.txt.
+Add that file git add ..
+Commit that file git commit -m "initial commit".
+Create a new branch called feature => git checkout -b feature.
+Now that you are on the feature branch, create a file called new.txt => touch new.txt.
+Add that file => git add ..
+Commit that file => git commit -m "adding new.txt".
+Create another file called another.txt => touch another.txt.
+Add that file => git add ..
+Commit that file => git commit -m "adding another.txt".
+Change back to the master branch => git checkout master. Note that this branch has no awareness of new.txt or another.txt!
+Merge our changes from the feature branch into the master branch => git merge feature
+Delete our branch called feature => git branch -D feature
+
+
+git tag v1
+git tag --list
+git push origin v1
+
+
+
+Create a folder called branch_check.
+cd into that folder.
+Initialize an empty git repository.
+Create a file called first.txt, then add and commit the file.
+Create a new branch called new_feature.
+Create a file called F1.txt.
+Add the file.
+Commit the file with the message -m "added F1.txt".
+Switch back to the master branch.
+Merge your changes from the feature branch into master.
+Delete the feature branch.

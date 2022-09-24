@@ -1,0 +1,29 @@
+mkdir merge_conflicts
+cd merge_conflicts
+git init
+echo first > first.txt
+git add .
+git commit -m "first commit"
+
+git checkout -b new_branch
+echo second > second.txt
+git add .
+git commit -m "adding second.txt"
+
+git checkout master
+echo something_else > second.txt
+git add .
+git commit -m "adding second.txt on the master branch"
+
+git merge new_branch
+
+#fixing
+
+git add .
+git commit -m "fixing merge conflict"
+
+
+excerise 
+
+create a merge conflict and then fix the merge conflict by correcting the conflict
+
