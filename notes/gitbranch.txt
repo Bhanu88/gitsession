@@ -1,4 +1,4 @@
-##
+#
 Create a folder called learn_branching and cd into it => mkdir learn_branching && cd learn_branching.
 Initialize a git repository => git init.
 Create a file called first.txt => touch first.txt.
